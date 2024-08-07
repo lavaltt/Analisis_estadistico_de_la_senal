@@ -25,6 +25,9 @@ Teniendo en cuenta las características de la señal,se toma específicamente el
 * Guardar los archivos descargados en el mismo directorio donde se encuentra el proyecto de python.
 
 ## Instrucciones para el uso del código
+El archivo Lab1.zip, contiene el código generado en python y la señal elegida en las extensiones requeridas. 
+Recuerde guardar en esta carpeta su nueva señal, si desea probar con otra diferente. 
+
 ### Prerrequisitos
 Antes de ejecutar el código, asegúrese de tener instaladas las siguientes bibliotecas de Python:
 1. wfdb
@@ -92,6 +95,7 @@ El histograma es una representación gráfica de la distribución de un conjunto
 En este proyecto, se realizó el histograma de dos maneras, así como los cálculos estadísticos. La primera, por medio de las librerias de python que continene funciones para realizar este diagrama; y la segunda, de manera más larga, programando por pasos las fórmulas. 
 
 ![Histograma](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/histograma%20programado.png?raw=true)
+
 *Histograma realizado por medio de bibliotecas de python*
 
 ###Función de probabilidad
@@ -120,11 +124,13 @@ Es decir, el ruido generado tiene una amplitud de 4 y se disminuyó a 0.3.
 Para este caso, se obtuvo una SNR = 11.04 dB. Esto quiere decir que la señal es mucho mayor que el ruido y se puede distinguir sin mayor dificultad, la gráfica de la señal con el ruido nos permite corroborarlo. 
 
 ![Normalización 1, ruido Gaussiano](: https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso1.png?raw=true)
+
 *Gráfica de la señal con la normalización del ruido Gaussiano para un SNR positivo*
 
 Por el lado contrario, al realizar una segunda normalización, dejando el ruido con una amplitud de 1.5, se cálculo un SNR = -2.9. Indicando que el ruido es mayor y no permite visualizar la señal correctamente. La señal se observa a continuación. 
 
 ![Normalización 2, ruido Gaussiano](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso2.png?raw=true)
+
 *Gráfica de la señal con la normalización del ruido Gaussiano para un SNR negativo*
 
 [^1^]: https://physionet.org/
