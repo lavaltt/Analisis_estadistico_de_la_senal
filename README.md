@@ -1,13 +1,26 @@
 # Análisis estadístico de la señal
 ## Descripción
-Este proyecto realiza un análisis estadístico de una señal biomédica (ECG) obtenida de PhysioNet. Incluye visualización de la señal, cálculos estadísticos, generación de histogramas, y la introducción de diferentes tipos de ruido (gaussiano, impulso y artefacto) con normalización en dos escenarios distintos (SNR positivo y negativo).
+Este proyecto realiza un análisis estadístico de una señal biomédica (ECG) obtenida de PhysioNet[^1^]. Incluye visualización de la señal, cálculos estadísticos, generación de histogramas, y la introducción de diferentes tipos de ruido (gaussiano, impulso y artefacto) con normalización en dos escenarios distintos (SNR positivo y negativo).
 ### Detalles de la señal
 La señal utilizada en este proyecto proviene de PhysioNet y está almacenada en un archivo con extensión .dat y .hea. En este proyecto, se elige una señal multicanal, que refleja los efectos de ciertos farmácos como dofetilida, moxifloxacino, mexiletina y otros, en un ECG. Dichos medicamentos actuan en la prolongación del intervalo QT.
 Teniendo en cuenta las características de la señal,se toma específicamente el canal 12 para su análisis. Se realizan diversos cálculos y gráficos para proporcionar una comprensión integral de la señal y los efectos del ruido en ella.
 
 ![Señal ECG](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/se%C3%B1al%20ecg.png?raw=true)
 
-Señal ECG extraida de physionet.
+#### Descarga de una señal desde PhysioNet
+
+1. Acceder a PhysioNet:
+* Ir al sitio web de PhysioNet[^1^].
+  
+2. Seleccionar la Base de Datos:
+* Presiona el botón data del menú principal y navegar a través de las bases de datos disponibles. Selecciona una que sea adecuada para tu análisis (por ejemplo, la que fue elegida para este proyecto es ECG Effects of Dofetilide, Moxifloxacin, Dofetilide+Mexiletine, Dofetilide+Lidocaine and Moxifloxacin+Diltiazem).
+  
+3. Descargar los Archivos:
+
+* Descarga los archivos .dat y .hea correspondientes a la señal de interés.
+4. Guardar los Archivos:
+
+* Guarda los archivos descargados en el mismo directorio donde se encuentra el proyecto de python.
 
 ## Instrucciones para el uso del código
 ### Prerrequisitos
@@ -28,12 +41,12 @@ Asegúrate de que los archivos .dat y .hea de la señal estén en la misma carpe
 
 Al ejecutar el código, se presenta un menú con varias opciones:
 
-Opción 1: Visualizar los datos y gráficos de la señal original.
-Opción 2: Calcular y mostrar estadísticas descriptivas (media, desviación estándar y coeficiente de variación) usando fórmulas programadas y funciones de la biblioteca statistics.
-Opción 3: Generar y mostrar un histograma de la señal utilizando funciones de Python y programando las fórmulas manualmente.
-Opción 4: Contaminar la señal con ruido gaussiano y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
-Opción 5: Contaminar la señal con ruido impulso y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
-Opción 6: Contaminar la señal con ruido artefacto y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
+* Opción 1: Visualizar los datos y gráficos de la señal original.
+* Opción 2: Calcular y mostrar estadísticas descriptivas (media, desviación estándar y coeficiente de variación) usando fórmulas programadas y funciones de la biblioteca statistics.
+* Opción 3: Generar y mostrar un histograma de la señal utilizando funciones de Python y programando las fórmulas manualmente.
+* Opción 4: Contaminar la señal con ruido gaussiano y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
+* Opción 5: Contaminar la señal con ruido impulso y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
+* Opción 6: Contaminar la señal con ruido artefacto y visualizar los resultados para dos casos de normalización (SNR positivo y negativo).
 
 #### Seleccionar una Opción
 
@@ -45,7 +58,7 @@ Para los cálculos por medio de bibliotecas de python, simplemente se utilizan l
 ```python
 media = stt.mean(a)
 ```
-a es el canal elegido de la señal multicanal descrita anteriomente. 
+'a' es el canal elegido de la señal multicanal descrita anteriomente. 
 Se logró determinar que ambos métodos (funciones de python y programando fórmulas) proporcionan los mismos resultados. 
 
 ### Cálculo programando fórmulas
@@ -72,6 +85,11 @@ coeficiente_0 = desviacion_0 / media_0
 ```
 ## Histograma y función de probabilidad
 
+![Histograma](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/histograma%20programado.png?raw=true)
+
+###Función de probabilidad
+
+
 ## Relación señal-ruido(SNR)
 El SNR (Signal-to-Noise Ratio) es una medida que compara el nivel de una señal deseada con el nivel del ruido de fondo. Se expresa en decibelios (dB) y se calcula como:
 
@@ -92,6 +110,10 @@ ruidoGN = (ruido_gaussiano*0.3)/4
 Es decir, el ruido generado tiene una amplitud de 4 y se disminuyó a 0.3.
 Para este caso, se obtuvo una SNR = 11.04 dB. Esto quiere decir que la señal es mucho mayor que el ruido y puede observar sin mayor dificultad, la gráfica de la señal con el ruido nos permite corroborarlo. 
 
+![Normalización 1, ruido Gaussiano](: https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso1.png?raw=true)
+
 Por el lado contrario, al realizar una segunda normalización, dejando el ruido con una amplitud de 1.5, se cálculo un SNR = -2.9. Indicando que el ruido es mayor y no permite visualizar la señal correctamente. La señal se observa a continuación. 
 
+![Normalización 2, ruido Gaussiano](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso2.png?raw=true)
 
+[^1^]: https://physionet.org/
