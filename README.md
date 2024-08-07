@@ -8,10 +8,10 @@ Teniendo en cuenta las características de la señal,se toma específicamente el
 ## Instrucciones para el uso del código
 ### Prerrequisitos
 Antes de ejecutar el código, asegúrate de tener instaladas las siguientes bibliotecas de Python:
--wfdb
--matplotlib
--numpy
--statistics
+1. wfdb
+2. matplotlib
+3. numpy
+4. statistics
 Pueden instalarse haciendo uso del comando 'pip install', seguido del nombre de la libreria, en la consola del compilador.
 
 ### Ejecución del Código
