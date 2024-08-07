@@ -1,25 +1,26 @@
 # Análisis estadístico de la señal
 ## Descripción
-Este proyecto realiza un análisis estadístico de una señal biomédica (ECG) obtenida de PhysioNet[^1^]. Incluye visualización de la señal, cálculos estadísticos, generación de histogramas, y la introducción de diferentes tipos de ruido (gaussiano, impulso y artefacto) con normalización en dos escenarios distintos (SNR positivo y negativo).
+Este proyecto realiza un análisis estadístico de una señal biomédica (ECG) obtenida de PhysioNet.[^1^].
+Incluye visualización de la señal, cálculos estadísticos, generación de histogramas, y la introducción de diferentes tipos de ruido (gaussiano, impulso y artefacto) con normalización en dos escenarios distintos (SNR positivo y negativo).
 ### Detalles de la señal
 La señal utilizada en este proyecto proviene de PhysioNet y está almacenada en un archivo con extensión .dat y .hea. En este proyecto, se elige una señal multicanal, que refleja los efectos de ciertos farmácos como dofetilida, moxifloxacino, mexiletina y otros, en un ECG. Dichos medicamentos actuan en la prolongación del intervalo QT.
 Teniendo en cuenta las características de la señal,se toma específicamente el canal 12 para su análisis. Se realizan diversos cálculos y gráficos para proporcionar una comprensión integral de la señal y los efectos del ruido en ella.
 
 ![Señal ECG](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/se%C3%B1al%20ecg.png?raw=true)
-
+*Señal ECG elegida para realizar su análisis.(Gráfica realizada en el código)*
 #### Descarga de una señal desde PhysioNet
 
 1. Acceder a PhysioNet:
-* Ir al sitio web de PhysioNet[^1^].
+* Ir al sitio web de PhysioNet.[^1^]
   
 2. Seleccionar la Base de Datos:
-* Presiona el botón data del menú principal y navegar a través de las bases de datos disponibles. Selecciona una que sea adecuada para tu análisis (por ejemplo, la que fue elegida para este proyecto es ECG Effects of Dofetilide, Moxifloxacin, Dofetilide+Mexiletine, Dofetilide+Lidocaine and Moxifloxacin+Diltiazem).
+* Presiona el botón data del menú principal y navegar a través de las bases de datos disponibles. Selecciona una que sea adecuada para tu análisis.
+(Por ejemplo, la que fue elegida para este proyecto es ECG Effects of Dofetilide, Moxifloxacin, Dofetilide+Mexiletine, Dofetilide+Lidocaine and Moxifloxacin+Diltiazem).
   
 3. Descargar los Archivos:
-
 * Descarga los archivos .dat y .hea correspondientes a la señal de interés.
+  
 4. Guardar los Archivos:
-
 * Guarda los archivos descargados en el mismo directorio donde se encuentra el proyecto de python.
 
 ## Instrucciones para el uso del código
@@ -117,3 +118,10 @@ Por el lado contrario, al realizar una segunda normalización, dejando el ruido 
 ![Normalización 2, ruido Gaussiano](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso2.png?raw=true)
 
 [^1^]: https://physionet.org/
+[^2^]:Qué es Señal-Ruido. Diccionario Médico. Clínica U. Navarra. (s/f). https://www.cun.es. Recuperado de https://www.cun.es/diccionario-medico/terminos/senal-ruido.
+[^3^]: Roberto Behar Gutiérrez, P. G. i. C. (2013). El histograma como un instrumento para la comprensión de las funciones de densidad de probabilidad. Probabilidad Condicionada: Revista de didáctica de la Estadística, ISSN-e 2255-5854, No. 2, 2013, ágs. 229-235.
+[^4^]: Hernández, G. J. P. (2016). ELEMENTOS BÁSICOS DE ESTADÍSTICA DESCRIPTIVA PARA EL ANÁLISIS DE DATOS. Fondo Editorial Luis Amigó.
+
+
+
+
