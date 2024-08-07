@@ -8,7 +8,7 @@ Teniendo en cuenta las características de la señal,se toma específicamente el
 
 ![Señal ECG](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/se%C3%B1al%20ecg.png?raw=true)
 
-*Señal ECG elegida para realizar su análisis.(Gráfica realizada en el código)*
+*Señal ECG elegida para realizar su análisis.(Gráfica realizada en el código).*
 #### Descarga de una señal desde PhysioNet
 
 1. Acceder a PhysioNet:
@@ -40,7 +40,7 @@ Antes de ejecutar el código, asegúrese de tener instaladas las siguientes bibl
 ### Ejecución del Código
 #### Carga de la Señal
 
-Verifique de que los archivos .dat y .hea de la señal estén en la misma carpeta que el proyecto de Python. El código carga la señal utilizando la biblioteca wfdb.
+Verifique que los archivos .dat y .hea de la señal estén en la misma carpeta que el proyecto de Python. El código carga la señal utilizando la biblioteca wfdb.
 
 #### Menú Principal
 
@@ -55,7 +55,7 @@ Al ejecutar el código, se presenta un menú con varias opciones:
 
 #### Seleccionar una Opción
 
-Ingrese el número de la opción deseada y siga las instrucciones adicionales que se presenten en pantalla. Por ejemplo, algunas opciones requieren que elija entre cálculos manuales o automáticos, o entre diferentes casos de normalización.
+Ingrese el número de la opción deseada y siga las instrucciones adicionales que se presenten en la consola. Por ejemplo, algunas opciones requieren que elija entre cálculos manuales o automáticos, o entre diferentes casos de normalización.
 
 ## Cálculos estadísticos
 Para los cálculos por medio de bibliotecas de python, simplemente se utilizan las funciones predeterminadas que hacen internamente el cálculo. 
@@ -96,9 +96,9 @@ En este proyecto, se realizó el histograma de dos maneras, así como los cálcu
 
 ![Histograma](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/histograma%20programado.png?raw=true)
 
-*Histograma realizado por medio de bibliotecas de python*
+*Histograma realizado por medio de bibliotecas de python.*
 
-###Función de probabilidad
+### Función de probabilidad
 
 
 ## Relación señal-ruido(SNR)
@@ -123,15 +123,15 @@ ruidoGN = (ruido_gaussiano*0.3)/4
 Es decir, el ruido generado tiene una amplitud de 4 y se disminuyó a 0.3.
 Para este caso, se obtuvo una SNR = 11.04 dB. Esto quiere decir que la señal es mucho mayor que el ruido y se puede distinguir sin mayor dificultad, la gráfica de la señal con el ruido nos permite corroborarlo. 
 
-![Normalización 1, ruido Gaussiano](: https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso1.png?raw=true)
+![Normalización 1, ruido Gaussiano](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso1.png?raw=true)
 
-*Gráfica de la señal con la normalización del ruido Gaussiano para un SNR positivo*
+*Gráfica de la señal con la normalización del ruido Gaussiano para un SNR positivo.*
 
 Por el lado contrario, al realizar una segunda normalización, dejando el ruido con una amplitud de 1.5, se cálculo un SNR = -2.9. Indicando que el ruido es mayor y no permite visualizar la señal correctamente. La señal se observa a continuación. 
 
 ![Normalización 2, ruido Gaussiano](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/RGcaso2.png?raw=true)
 
-*Gráfica de la señal con la normalización del ruido Gaussiano para un SNR negativo*
+*Gráfica de la señal con la normalización del ruido Gaussiano para un SNR negativo.*
 
 [^1^]: https://physionet.org/
 [^2^]:Qué es Señal-Ruido. Diccionario Médico. Clínica U. Navarra. (s/f). https://www.cun.es. Recuperado de https://www.cun.es/diccionario-medico/terminos/senal-ruido.
