@@ -101,7 +101,7 @@ En este proyecto, se realizó el histograma de dos maneras, así como los cálcu
 ### Función de probabilidad
 La función de probabilidad o función de densidad de probabilidad (PDF) para variables continuas, describe cómo se distribuyen los valores de una variable aleatoria. Es fundamental para entender la naturaleza de los datos y hacer inferencias estadísticas. Se utiliza en modelado de datos, predicción, pruebas de hipótesis, análisis de riesgos y generación de datos sintéticos. La función de probabilidad permite cuantificar la probabilidad de diferentes eventos dentro del rango de los datos observados.[^5^].
 
-![Histograma con función de probabilidad]()
+![Histograma con función de probabilidad](https://github.com/lavaltt/Analisis_estadistico_de_la_senal/blob/main/histogramafp.jpeg?raw=true)
 
 *Histograma realizado en python con la función de probabilidad.*
 
