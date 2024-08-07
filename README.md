@@ -5,6 +5,9 @@ Este proyecto realiza un análisis estadístico de una señal biomédica (ECG) o
 La señal utilizada en este proyecto proviene de PhysioNet y está almacenada en un archivo con extensión .dat y .hea. En este proyecto, se elige una señal multicanal, que refleja los efectos de ciertos farmácos como dofetilida, moxifloxacino, mexiletina y otros, en un ECG. Dichos medicamentos actuan en la prolongación del intervalo QT.
 Teniendo en cuenta las características de la señal,se toma específicamente el canal 12 para su análisis. Se realizan diversos cálculos y gráficos para proporcionar una comprensión integral de la señal y los efectos del ruido en ella.
 
+![Señal ECG](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/se%C3%B1al%20ecg.png?raw=true)
+*Señal ECG extraida de physionet.
+
 ## Instrucciones para el uso del código
 ### Prerrequisitos
 Antes de ejecutar el código, asegúrate de tener instaladas las siguientes bibliotecas de Python:
