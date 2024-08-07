@@ -6,6 +6,7 @@ La señal utilizada en este proyecto proviene de PhysioNet y está almacenada en
 Teniendo en cuenta las características de la señal,se toma específicamente el canal 12 para su análisis. Se realizan diversos cálculos y gráficos para proporcionar una comprensión integral de la señal y los efectos del ruido en ella.
 
 ![Señal ECG](https://github.com/lavaltt/An-lisis-estad-stico-de-la-se-al/blob/main/se%C3%B1al%20ecg.png?raw=true)
+
 *Señal ECG extraida de physionet.
 
 ## Instrucciones para el uso del código
