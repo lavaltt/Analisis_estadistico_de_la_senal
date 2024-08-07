@@ -99,7 +99,13 @@ En este proyecto, se realizó el histograma de dos maneras, así como los cálcu
 *Histograma realizado por medio de bibliotecas de python.*
 
 ### Función de probabilidad
+La función de probabilidad o función de densidad de probabilidad (PDF) para variables continuas, describe cómo se distribuyen los valores de una variable aleatoria. Es fundamental para entender la naturaleza de los datos y hacer inferencias estadísticas. Se utiliza en modelado de datos, predicción, pruebas de hipótesis, análisis de riesgos y generación de datos sintéticos. La función de probabilidad permite cuantificar la probabilidad de diferentes eventos dentro del rango de los datos observados.[^5^].
 
+![Histograma con función de probabilidad]()
+
+*Histograma realizado en python con la función de probabilidad.*
+
+En la gráfica generada, la función de probabilidad muestra que la mayoría de los datos se concentran en valores bajos cerca de cero y disminuyen exponencialmente hacia valores más altos, indicando una distribución sesgada a la derecha. La línea azul de la función de probabilidad sigue de cerca la forma del histograma, comenzando alta y disminuyendo gradualmente. Esto refleja que los valores bajos son mucho más comunes, mientras que los valores altos son raros. La normalización de la función de probabilidad asegura que el área total bajo la curva sea igual a uno, permitiendo una interpretación precisa de las probabilidades relativas de diferentes rangos de valores en el conjunto de datos.
 
 ## Relación señal-ruido(SNR)
 El SNR (Signal-to-Noise Ratio) es una medida que compara el nivel de una señal deseada con el nivel del ruido de fondo.[^2^] .Se expresa en decibelios (dB) y se calcula como:
@@ -137,7 +143,7 @@ Por el lado contrario, al realizar una segunda normalización, dejando el ruido 
 [^2^]:Qué es Señal-Ruido. Diccionario Médico. Clínica U. Navarra. (s/f). https://www.cun.es. Recuperado de https://www.cun.es/diccionario-medico/terminos/senal-ruido.
 [^3^]: Roberto Behar Gutiérrez, P. G. i. C. (2013). El histograma como un instrumento para la comprensión de las funciones de densidad de probabilidad. Probabilidad Condicionada: Revista de didáctica de la Estadística, ISSN-e 2255-5854, No. 2, 2013, ágs. 229-235.
 [^4^]: Hernández, G. J. P. (2016). ELEMENTOS BÁSICOS DE ESTADÍSTICA DESCRIPTIVA PARA EL ANÁLISIS DE DATOS. Fondo Editorial Luis Amigó.
-
+[^5^]:Probability and Statistics for Engineers and Scientists por Ronald E. Walpole, Raymond H. Myers, Sharon L. Myers, y Keying Ye.
 
 
 
