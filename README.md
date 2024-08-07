@@ -12,6 +12,7 @@ Antes de ejecutar el código, asegúrate de tener instaladas las siguientes bibl
 2. matplotlib
 3. numpy
 4. statistics
+   
 Pueden instalarse haciendo uso del comando 'pip install', seguido del nombre de la libreria, en la consola del compilador.
 
 ### Ejecución del Código
